@@ -1,0 +1,129 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(../img/img-gen/minebros-transformed2.0.png);
+    font-family: 'Poppins', ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    backdrop-filter: blur(1px);
+}
+
+header {
+    position: fixed;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 12px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    background-color: rgba(14, 14, 14, 0.966);
+    flex-wrap:nowrap;
+}
+
+.logo {
+    font-size: 1.8em;
+    color: #fff;
+    user-select: none;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation a.none-a::after {
+    transform: scaleX(0);
+}
+
+.navigation a.none-a:hover::after {
+    transform: scaleX(0);
+}
+
+.navigation a.active-page::after{
+    transform: scaleX(0.6);
+    background: #353535;
+}
+.navigation a.active-page:hover::after{
+    transform: scaleX(1);
+    background: #ffffff;
+}
+
+input[type=text] {
+    width: 230px;
+    position: relative;
+    font-size: 1.1em;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.navigation .btnLogin {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .5s;
+}
+
+.navigation .btnLogin:hover {
+    background: #fff;
+    color: #162938;
+
+}
+
+.navigation .btnLogin a {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.navigation .btnLogin .none-a {
+    margin: 0px;
+    padding: 0px;
+    width: 0px;
+    height: 0px;
+}
