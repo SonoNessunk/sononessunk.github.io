@@ -24,19 +24,18 @@ header {
     width: 100%;
     padding: 12px 100px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-evenly;
+    align-items: start;
     z-index: 99;
     background-color: rgba(14, 14, 14, 0.966);
-    flex-wrap:nowrap;
+    flex-wrap:wrap;
 }
 
 .logo {
     font-size: 1.8em;
     color: #fff;
     user-select: none;
-    text-align: center;
-    line-height: 1.2;
+    align-items: center;
 }
 
 .navigation a {
@@ -105,7 +104,7 @@ input[type=text] {
     font-size: 1.1em;
     color: #fff;
     font-weight: 500;
-    margin-left: 30px;
+    margin-left: 400px;
     transition: .5s;
 }
 
@@ -126,4 +125,42 @@ input[type=text] {
     padding: 0px;
     width: 0px;
     height: 0px;
+}
+
+@media screen and (max-width: 700px) {
+
+    .logo {
+        font-size: 120%;
+        padding: 12px;
+
+    }
+
+    .navigation .btnLogin {
+        width: 80px;
+        height: 30px;
+        font-size: 1.1em;
+        color: #fff;
+        margin-left: 18px;
+        position: fixed;
+    }
+
+    header {
+        position: sticky;
+        top: auto;
+        bottom: 0;
+        left: auto;
+        width: 100%;
+        padding: 24px 12px;
+        justify-content: space-evenly;
+        z-index: 99;
+        /*background-color: rgba(22, 41, 56, 0.99);*/
+        background-color: rgba(14, 14, 14, 0.966);
+        display: block;
+    }
+
+    .navigation a {
+        position: relative;
+        font-size: 1.1em;
+        margin-left: 35px;
+    }
 }

@@ -5,79 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MineBros | Members</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
+    <link rel="stylesheet" href="../css/nav.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
 </head>
 <body>
-    <div class="background"></div>
-    <header>
-        <h2 class="logo">MineBros</h2>
-        <nav class="navigation">
-            <a href="../index.html">Home</a>
-            <a class="active-page" href="./memb.html">Members</a>
-            <a href="./about.html">About</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <a href="./login.html" class="none-a"><button class="btnLogin">Login</button></a>
-        </nav>
-    </header>
-
-    <div class="elenco-part">
-        <b>
-            <b class="part">
-                Partecipanti / Collaboratori:
-            </b>
-            <h4>
-                <font class="jag">
-                    <ul>
-                        JAGwolf<img src="../img/img-parte/JAGwolf.jpg" width="100px" hspace="36">
-                    </ul>
-                </font>
-
-                <video width="700" autoplay controls muted loop>                
-                    <source src="../video/video-mem/JAGwolf.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-
-                
-                
-                <font class="mass">
-                    <ul>
-                        Massimo_850<img src="../img/img-parte/Massimo_850.png" width="100px" height="100px" hspace="36">
-                    </ul>    
-                </font>
-
-                <video width="700"  autoplay controls muted loop>
-                    <source src="../video/video-mem/No.Video.Yet.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                
-
-                <font class="gx">
-                <ul>
-                    GX_328GAMER <img src="../img/img-parte/giig.jpg" width="96px" hspace="134">
-                </ul>
-                </font>
-
-                <video width="700" autoplay controls muted loop>
-                    <source src="../video/video-mem/No.Video.Yet.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-
-                <font class="red">
-                    <ul>
-                        RedMonster <img src="../img/img-parte/unnamed.jpg" width="100px" height="100" hspace="36">
-                    </ul>    
-                </font>
-
-                <video width="700" autoplay controls muted loop>
-                    <source src="../video/video-mem/No.Video.Yet.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                
-            </h4>
-        </b>
-    </div>
-
     
+    <header>
+        <a href="../index.html" class="logo" ><span>MineBros</span></a>
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="main">
+            <a href="#" class="user"><i class="ri-user-fill" ></i>Sign In</a>
+            <a href="#">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    
+    <script type="text/javascript" src="../js/menu.js"></script>
 </body>
 </html>

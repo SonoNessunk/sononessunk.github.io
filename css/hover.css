@@ -137,7 +137,7 @@
   outline-offset: 5px;
 }
 
-@media (hover: hover) and (min-width: 600px) {
+@media (hover: hover) and (min-width: 650px) {
   .card:after {
     transform: translateY(0);
   }
@@ -185,14 +185,11 @@
   }
 }
 
-button {
+button.btn {
   background: none!important;
   border: none;
   padding: 0!important;
-  /*optional*/
   font-family: arial, sans-serif;
-  /*input has OS specific font-family*/
-  color: #069;
   text-decoration: underline;
   cursor: pointer;
 }
