@@ -17,17 +17,15 @@
 
 body {
     background: var(--bg-color);
-    /*background: url(../img/img-gen/minebros-transformed2.0.png);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; */
-    backdrop-filter: blur(3px);
+    background: var(--bg-color) url("../img/img-gen/minebros-transformed2.0.png") no-repeat fixed center;
+    backdrop-filter: blur(2px);
     color: var(--text-color);
     min-height: 100vh;
 }
 
 header {
     position: fixed;
+    position: sticky;
     width: 100%;
     top: 0;
     right: 0;
@@ -35,8 +33,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.876);
-    padding: 28px 12%;
+    background: rgba(0, 0, 0, 0.847);
+    backdrop-filter: blur(12px);
+    padding: 15px 12%;
     transition: all .50s ease;
 }
 
@@ -100,7 +99,7 @@ header {
     margin-right: 25px;
     margin-left: 10px;
     color: var(--text-color);
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 500;
     transition: all .50s ease;
     position: relative;
@@ -163,13 +162,16 @@ header {
         top: 100%;
         right: -100%;
         width: 270px;
-        height: 29vh;
-        background: var(--main-color);
+        height: auto;
+        background: rgba(0, 0, 0, 0.847);
+        backdrop-filter: blur(12px);
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        border-radius: 10px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
         transition: all .50s ease;
+        size: auto;
     }
 
     .navbar a {
