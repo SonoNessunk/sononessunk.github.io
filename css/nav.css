@@ -18,6 +18,7 @@
 body {
     background: var(--bg-color);
     background: var(--bg-color) url("../img/img-gen/minebros-transformed2.0.png") no-repeat fixed center;
+    background-size: cover;
     backdrop-filter: blur(2px);
     color: var(--text-color);
     min-height: 100vh;
