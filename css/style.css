@@ -16,6 +16,7 @@ body {
     height: 100vh;
 }
 
+/*
 header {
     position: fixed;
     position: sticky;
@@ -31,7 +32,7 @@ header {
     background-color: rgba(14, 14, 14, 0.966);
     flex-wrap:nowrap;
 }
-
+/*
 .logo {
     font-size: 1.8em;
     color: #fff;
@@ -161,7 +162,7 @@ input[type=text] {
         justify-content: space-evenly;
         z-index: 99;
         /*background-color: rgba(22, 41, 56, 0.99);*/
-        background-color: rgba(14, 14, 14, 0.966);
+       /* background-color: rgba(14, 14, 14, 0.966);
         display: block;
     }
 

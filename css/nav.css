@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Poppins);
+@import url("https://fonts.googleapis.com/css?family=Poppins");
 
 * {
     font-family: 'Poppins', ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
@@ -97,8 +97,8 @@ header {
 }
 
 .main a {
-    margin-right: 25px;
-    margin-left: 10px;
+    margin-right: 20px;
+    margin-left: 8px;
     color: var(--text-color);
     font-size: 1rem;
     font-weight: 500;
@@ -153,15 +153,20 @@ header {
     }
 }
 
-@media (max-width: 1090px){
+@media (max-width: 1000px){
     #menu-icon{
         display: block;
+    }
+    
+    .logo span {
+        color: var(--text-color);
+        font-size: 1.7rem;
+        font-weight: 600;
     }
 
     .navbar {
         position: absolute;
         top: 100%;
-        right: -100%;
         width: 270px;
         height: auto;
         background: rgba(0, 0, 0, 0.847);
@@ -170,14 +175,14 @@ header {
         flex-direction: column;
         justify-content: flex-start;
         border-bottom-left-radius: 8px;
-        border-bottom-right-radius: 8px;
         transition: all .50s ease;
         size: auto;
+        display: none;
     }
 
     .navbar a {
         display: block;
-        margin: 12px 0;
+        margin: 15px 0;
         padding: 0px 25px;
         transition: all .50s ease;
     }
@@ -192,7 +197,9 @@ header {
     }
 
     .navbar.open {
-        right: 2%;
+        right: 0%;
+        display: flex;
+        transition: all .50s ease;
     }
 
 
