@@ -14,7 +14,7 @@
   flex-wrap: nowrap;
   display: grid;
   grid-gap: 1rem;
-  padding-top: 12rem;
+  padding-top: 9rem;
   max-width: 1024px;
   margin: 0 auto;
   font-family: var(--font-sans);
