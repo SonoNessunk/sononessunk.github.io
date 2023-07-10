@@ -227,7 +227,7 @@ header {
     display: none;
 }
 
-@keyframes example {
+/*@keyframes example {
     12.5%  {color: rgb(249, 21, 21);}
     25%  {color: yellow;}
     37.5%  {color: rgb(0, 64, 255);}
@@ -237,7 +237,7 @@ header {
     87.5%  {color: rgb(0, 64, 255);}
     100% {color: rgb(0, 155, 0);}
   }
-  
+  */
   .logo span {
     color: white;
     animation: example 5s step-end infinite;
