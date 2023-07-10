@@ -12,7 +12,8 @@
 :root {
     --bg-color: #2e2e2e;
     --text-color: #fff;
-    --main-color: #29fd53;
+    --main-color: #dbad2e;
+    --hover-color: #e8c973;
 }
 
 body {
@@ -72,7 +73,7 @@ header {
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: #fff;
+    background: #e8c973;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform .5s;
@@ -84,11 +85,11 @@ header {
 
 .navbar a.active::after{
     transform: scaleX(0.6);
-    background: #353535;
+    background: #e1b53e;
 }
 .navbar a.active:hover::after{
     transform: scaleX(1);
-    background: #ffffff;
+    background: #e8c973;
 }
 
 .main {
@@ -154,6 +155,11 @@ header {
 }
 
 @media (max-width: 1000px){
+    
+    .navbar hr {
+        display: block!important; 
+    }
+    
     #menu-icon{
         display: block;
     }
@@ -188,12 +194,12 @@ header {
     }
 
     .navbar a:hover {
-        color: var(--text-color);
-        transform: translateY(5px);
+        color: var(--hover-color);
+        transform: translateY(6px);
     }
 
     .navbar a.active {
-        color: var(--text-color);
+        color: var(--main-color);
     }
 
     .navbar.open {
@@ -214,4 +220,9 @@ header {
     .navbar a.active:hover::after{
         transform: scaleX(0);
     }
+}
+
+.navbar hr {
+    color: #353535;
+    display: none;
 }
