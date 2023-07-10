@@ -222,12 +222,13 @@ button.btn {
   right: 5%;
   font-size: 40px;
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.847);
+  backdrop-filter: blur(12px);
   border-radius: 6px;
   display: flex;
   align-content: center;
   align-items: center;
-  color: azure;
+  color: rgb(255, 255, 255);
   z-index: 1;
 }
 
@@ -257,7 +258,8 @@ button.btn {
     right: 15%;
     font-size: 40px;
     cursor: pointer;
-    background-color: rgb(252, 0, 0);
+    background-color: rgba(0, 0, 0, 0.847);
+    backdrop-filter: blur(12px);
     border-radius: 6px;
     display: flex;
     align-content: center;
