@@ -199,7 +199,7 @@ button.btn {
   cursor: pointer;
 }
 
-.video-container, .video-container1 {
+.video-container {
   position: fixed;
   top: 0; left: 0;
   width: 100%;
@@ -214,7 +214,7 @@ button.btn {
   transition: all 0.3s;
 }
 
-.video-container .close, .video-container .close {
+.video-container .close {
   position: absolute;
   top: 18%;
   right: 5%;
@@ -230,7 +230,7 @@ button.btn {
   z-index: 1;
 }
 
-.video-container video, .video-container video {
+.video-container video {
   width: 90%;
   max-width: 800px;
   transform: scale(0);
@@ -239,18 +239,18 @@ button.btn {
   transition: all 0.3s;
 }
 
-.video-container.show, .video-container1.show1 {
+.video-container.show {
   pointer-events: all;
   opacity: 1;
 }
 
-.video-container.show video, .video-container1.show1 video {
+.video-container.show video {
   transform: scale(1);
 }
 
 
 @media (min-width: 1500px) {
-  .video-container .close, .video-container .close {
+  .video-container .close {
     position: absolute;
     top: 18%;
     right: 15%;
