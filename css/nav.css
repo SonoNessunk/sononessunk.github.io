@@ -226,19 +226,3 @@ header {
     color: #353535;
     display: none;
 }
-
-@keyframes example {
-    12.5%  {color: rgb(249, 21, 21);}
-    25%  {color: yellow;}
-    37.5%  {color: rgb(0, 64, 255);}
-    50% {color: rgb(0, 155, 0);}
-    62.5%  {color: rgb(249, 21, 21);}
-    75%  {color: yellow;}
-    87.5%  {color: rgb(0, 64, 255);}
-    100% {color: rgb(0, 155, 0);}
-  }
-  
-  .logo span {
-    color: white;
-    animation: example 5s step-end infinite;
-  }
