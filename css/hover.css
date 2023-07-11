@@ -14,7 +14,7 @@
   flex-wrap: nowrap;
   display: grid;
   grid-gap: 1rem;
-  padding-top: 9rem;
+  padding-top: 8rem;
   max-width: 1024px;
   margin: 0 auto;
   margin-left: 12px auto;
@@ -44,13 +44,19 @@
   color: whitesmoke;
   background-color: whitesmoke;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1), 0 8px 8px rgba(0, 0, 0, 0.1), 0 16px 16px rgba(0, 0, 0, 0.1);
-  top: 28%;
+  top: 15%;
 }
 @media (min-width: 600px) {
   .card {
-    height: 350px;
+    height: 370px;
   }
 }
+@media (max-width: 600px) {
+  .card {
+    top: 0;
+  }
+}
+
 .card:before {
   content: "";
   position: absolute;
@@ -112,7 +118,7 @@
   font-size: 1.3rem;
   font-weight: bold;
   line-height: 1.2;
-  text-shadow: 19px 16px 3px #ffffff7f;
+  text-shadow: 7px 7px 3px #ffffffc3;
 }
 
 .copy {
@@ -265,4 +271,5 @@ button.btn {
     color: azure;
     z-index: 1;
   }
+
 }
