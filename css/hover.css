@@ -1,13 +1,22 @@
-@import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;700&display=swap');
 :root {
   --d: 700ms;
   --e: cubic-bezier(0.19, 1, 0.22, 1);
   --font-sans: "Rubik", sans-serif;
-  --font-serif: "Cardo", serif;
+
+  --bg-color: #2e2e2e;
+  --text-color: #fff;
+  --main-color: #dbad2e;
+  --hover-color: #e8c973;
+}
+
+h1 {
+  font-family: var(--font-sans);
 }
 
 * {
   box-sizing: border-box;
+
 }
 
 .page-content {
@@ -21,6 +30,8 @@
   margin-right: 12px auto;
   font-family: var(--font-sans);
 }
+
+
 @media (min-width: 600px) {
   .page-content {
     grid-template-columns: repeat(2, 1fr);
@@ -36,10 +47,12 @@
 .card {
   position: relative;
   display: flex;
-  align-items: flex-end;
+  /* align-items: flex-end; */
+  align-items: center;
   overflow: hidden;
-  padding: 2.4rem;
+  padding: 1.5rem;
   width: 100%;
+  height: 100%;
   text-align: center;
   color: whitesmoke;
   background-color: whitesmoke;
@@ -54,6 +67,8 @@
 @media (max-width: 600px) {
   .card {
     top: 0;
+    height: 370px;
+    align-items: center;
   }
 }
 
@@ -121,10 +136,18 @@
   text-shadow: 7px 7px 3px #ffffffc3;
 }
 
+.title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-shadow: 7px 7px 3px #ffffffc3;
+}
+
+
 .copy {
-  font-family: var(--font-serif);
-  font-size: 1.125rem;
-  font-style: italic;
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  font-style: oblique;
   line-height: 1.35;
 }
 
@@ -137,14 +160,18 @@
   letter-spacing: 0.025rem;
   text-transform: uppercase;
   color: white;
-  background-color: black;
   border: none;
+  padding: 0!important;
+  font-family: arial, sans-serif;
+  background: none;
+  transition: all .5s!important;
 }
 .btn:hover {
-  background-color: #0d0d0d;
+  outline: 1.8px outset var(--main-color);
+  outline-offset: 5px;
 }
 .btn:focus {
-  outline: 1px outset yellow;
+  outline: 1px outset var(--main-color);
   outline-offset: 5px;
 }
 
@@ -196,18 +223,28 @@
   }
 }
 
-button.btn {
+.card a {
+  color: #ffffffc3;
+  transition: color .5s!important;
+}
+
+.card a:hover {
+  color: var(--hover-color);
+  
+}
+
+/* button.btn {
   background: none!important;
   border: none;
   padding: 0!important;
   font-family: arial, sans-serif;
   text-decoration: underline;
   cursor: pointer;
-}
+} */
 
 .video-container {
   position: fixed;
-  top: 0; left: 0;
+  
   width: 100%;
   height: 100%;
   z-index: 999999;
@@ -218,6 +255,10 @@ button.btn {
   opacity: 0;
   pointer-events: none;
   transition: all 0.3s;
+
+top: 0;
+left: 0;
+right: 0;
 }
 
 .video-container .close {
