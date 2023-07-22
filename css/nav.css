@@ -207,7 +207,9 @@ header {
         transition: all .50s ease;
     }
 
-
+    .navbar li {
+        align-self: center;
+    }
 
     .navbar a:hover::after {
         transform: scaleX(0);
