@@ -46,8 +46,7 @@ h1 {
 .card {
   position: relative;
   display: flex;
-  /* align-items: flex-end; */
-  align-items: center;
+  align-items: flex-end;
   overflow: hidden;
   padding: 1.5rem;
   width: 100%;
