@@ -29,6 +29,7 @@ header {
     z-index: 99;
     /*background-color: rgba(22, 41, 56, 0.99);*/
     background-color: rgba(14, 14, 14, 0.966);
+    background-color: rgba(255, 0, 0, 0.966);
     flex-wrap:nowrap;
 }
 

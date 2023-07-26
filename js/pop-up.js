@@ -1,18 +1,18 @@
-const btns = document.querySelectorAll('.btn');
+function openPopup(videoUrl) {
+  var popup = document.getElementById('popup');
+  var popupVideo = document.getElementById('popupVideo');
+  popupVideo.src = videoUrl;
+  popup.style.display = 'block';
+  var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+  var popupHeight = popup.offsetHeight;
+  var offset = (windowHeight - popupHeight) / 2;
+  popup.style.top = offset + 'px';
+}
 
-btns.forEach(btn => {
-  btn.addEventListener('click', () => {
-    const popupId = btn.getAttribute('data-popup');
-    const popup = document.getElementById(popupId);
-    popup.classList.add('show');
-  });
-});
-
-const closeBtns = document.querySelectorAll('.close');
-
-closeBtns.forEach(close => {
-  close.addEventListener('click', () => {
-    const popup = close.parentNode;
-    popup.classList.remove('show');
-  });
-});
+function closePopup() {
+  var popup = document.getElementById('popup');
+  var popupVideo = document.getElementById('popupVideo');
+  popupVideo.pause();
+  popupVideo.currentTime = 0;
+  popup.style.display = 'none';
+}

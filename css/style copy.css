@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
+
+
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body
+
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.btn
+
+{
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn .play
+
+{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #faa30d;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 15px 25px #faa30d66;
+    transition: 0.5s;
+}
+
+
+.btn.active .play 
+
+{
+    box-shadow: 0 0 0 150vh #faa30d;
+}
+
+
+.btn .play::before
+
+{
+    content: '';
+    position: absolute;
+    border: 25px solid #fff;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 0px solid transparent;
+    transform: translateX(5px);
+}
+
+
+.btn p
+
+{
+    font-weight: 500;
+    font-size: 1em;
+    color: #888;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.clip
+
+{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    width: 100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: 0.5s;
+}
+
+.clip.active 
+
+{
+    transition-delay:0.5s;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+
+.clip video
+
+{
+    max-width: 900px;
+    outline: none;
+    border: 10px solid #fff;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.clip .close 
+
+{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+
+
+
+/* responsive code  */
+
+@media (max-width: 991px) 
+{
+    .clip video
+
+{
+    max-width: 90%;
+}
+}
