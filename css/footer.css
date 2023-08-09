@@ -49,6 +49,7 @@ footer {
     place-content: center;
     background-color: #000000;
     line-height: 24px;
+    text-align: center;
 }
 
 footer p a {
@@ -73,7 +74,7 @@ footer p a:hover {
 
     .footer section article {
         margin-left: 5rem;
-        margin-right: 5rem;    
+        margin-right: 5rem;
     }
     
     
