@@ -1,0 +1,20 @@
+.container{
+    max-width: 1024px; 
+    text-align: center; 
+}
+.container h1{
+    font-size: 80px;
+    font-weight: 600;
+    width: 100%;
+    margin: auto;
+}
+span{
+    color: var(--main-color);
+}
+
+@media (max-width: 1000px){
+    .container h1{
+        font-size: 2.2em;
+        font-weight: 600;
+    }
+}

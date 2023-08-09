@@ -1,13 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins");
-
-* {
-    font-family: 'Poppins', ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
     --bg-color: #2e2e2e;
@@ -16,21 +7,12 @@
     --hover-color: #e8c973;
 }
 
-body {
-    background: var(--bg-color) url("../img/img-gen/minebros-transformed2.0.png") no-repeat center;
-    background-size: cover;
-    backdrop-filter: blur(1px);
-    color: var(--text-color);
-    background-repeat: no-repeat;
-    height: 100vh;
-}
-
 header {
     position: fixed;
-    position: sticky;
     width: 100%;
     top: 0;
     right: 0;
+    left: 0;
     z-index: 10000;
     display: flex;
     align-items: center;
@@ -38,7 +20,7 @@ header {
     background: rgba(0, 0, 0, 0.847);
     backdrop-filter: blur(12px);
     padding: 15px 12%;
-    transition: all .50s ease;
+    transition: all .50s ease; 
 }
 
 .logo {
@@ -76,7 +58,7 @@ header {
     background: #e8c973;
     border-radius: 5px;
     transform: scaleX(0);
-    transition: transform .5s;
+    transition: transform .3s;
 }
 
 .navbar a:hover::after {
@@ -152,6 +134,8 @@ header {
         padding: 5px 0;
         margin: 0 20px;
     }
+
+    
 }
 
 @media (max-width: 1000px){

@@ -7,13 +7,13 @@
 }
 
 body {
-    background: url("../img/img-gen/minebros-transformed2.0.png") ;
-    backdrop-filter: blur(3px);
+    /* background: url("../img/img-gen/minebros-transformed2.0.png") ;
+    backdrop-filter: blur(3px); */
     font-family: 'Poppins', ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-    background-position: center;
+    /* background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100vh; */
 }
 
 header {
