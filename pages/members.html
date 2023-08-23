@@ -1,312 +1,180 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MineBros | Members</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MineBros | Members</title>
 
-  <link rel="icon" href="../img/img-favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/img-favicon/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
 
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
 
-  <!-- <link rel="stylesheet" href="../css/style.css"> -->
-  <!-- <link rel="stylesheet" href="../css/hover.css"> -->
-  <!-- <link rel="stylesheet" href="../css/nav.css"> -->
-  <link rel="stylesheet" href="../css/navbar.css">
-  <link rel="stylesheet" href="../css/var.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/card.css">
+
+    <link rel="stylesheet" href="../css/card2.css">
+
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/var.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/card.css">
 
 </head>
-
 <body>
-  <!-- <header>
-    <a href="../index.html" class="logo"><span>MineBros</span></a>
-    <ul class="navbar">
-        <li><a href="../index.html">Home</a></li>
-        <hr>
-        <li><a href="./members.html" class="active">Members</a></li>
-        <hr>
-        <li><a href="./workingprogress.html">About</a></li>
-        <hr>
-        <li><a href="./workingprogress.html">Services</a></li>
-        <hr>
-        <li><a href="./workingprogress.html">Contact</a></li>
-    </ul>
-    <div class="main">
-        <a href="./workingprogress.html" class="user"><i class="ri-user-fill" ></i>Sign In</a>
-        <a href="./workingprogress.html">Register</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-    </div>
-</header> -->
+    <nav>
+        <div class="nav-bar">
+            <span class="logo navLogo"><a href="../index.html">MineBros</a></span>
 
-  <nav>
-    <div class="nav-bar">
-
-      <span class="logo navLogo"><a href="../index.html">MineBros</a></span>
-
-      <div class="menu">
-        <div class="logo-toggle">
-          <span class="logo"><a href="../">MineBros</a></span>
-          <i class='bx bx-x siderbarClose'></i>
-        </div>
-
-        <ul class="nav-links">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="./workingprogress.html">About</a></li>
-          <li><a href="./members.html" class="active">Members</a></li>
-          <li><a href="./workingprogress.html">Services</a></li>
-          <li><a href="./workingprogress.html">Contact</a></li>
-          <li><a href="./testing.html">Testing - page</a></li>
-        </ul>
-      </div>
-
-      <div class="darkLight-searchBox">
-        <div class="dark-light">
-          <i class='bx bx-moon moon'></i>
-          <i class='bx bx-sun sun'></i>
-        </div>
-
-        <div class="searchBox">
-          <div class="searchToggle">
-            <i class='bx bx-x cancel'></i>
-            <i class='bx bx-search search'></i>
-          </div>
-
-          <div class="search-field">
-            <input type="text" placeholder="Search...">
-            <i class='bx bx-search'></i>
-          </div>
-        </div>
-
-        <i class='bx bx-menu sidebarOpen'></i>
-      </div>
-    </div>
-  </nav>
-
-
-  <div class="body-fix">
-    <!-- <main class="page-content">
-
-        <div class="card">
-          <div class="content">
-            <h2 class="title">GX_328GAMER</h2>
-            <p class="copy">* Preso da YT * <br> video con amici</p>
-            <a target= "_blank" href="https://youtube.com/@gx_328gamer6">Click for Channel #1</a>
-            <a target= "_blank" href="https://youtube.com/@gx_328gamer6">Channel #2</a>
-            <button class="btn" onclick="openPopup('../video/video-mem/No.Video.Yet.mp4')">View intro</button>
-          </div>
-        </div>
-  
-        <div class="card">
-          <div class="content">
-            <h2 class="title">JagWolf</h2>
-            <p class="copy">* Preso da YT * <br> I'm an italian boy who play minecraft :D</p>
-            <a target= "_blank" href="https://youtube.com/@jagwolf2125">Click for Channel</a>
-            <button class="btn" onclick="openPopup('../video/video-mem/JAGwolf.mp4')">View intro</button>
-          </div>
-        </div>
-  
-        <div class="card">
-          <div class="content">
-            <h2 class="title">SonoNessunk</h2>
-            <p class="copy">* Preso da YT * <br> Boh sono un aspirante programmatore, forse anche Streamer.</p>
-            <a target= "_blank" href="https://youtube.com/@Sono.Nessunk">Click for Channel</a>
-            <button class="btn" onclick="openPopup('../video/video-mem/MASS.mp4')">View intro</button>
-          </div>
-        </div>
-  
-        <div class="card">
-          <div class="content">
-            <h2 class="title">RedMonster</h2>
-            <p class="copy">* Preso da YT * <br> Salve a tutti io sono red monster e benvenuti</p>
-            <a target= "_blank" href="https://youtube.com/@redmonster6062">Click for Channel</a>
-            <button class="btn" onclick="openPopup('../video/video-mem/No.Video.RedMonster.mp4')">View intro</button>
-          </div>
-        </div>
-  
-      </main>
-  
-      <div class="popup" id="popup">
-        <button class="close-button" onclick="closePopup()">Chiudi</button>
-        <video controls id="popupVideo">
-          <source src="../video/video-mem/JAGwolf.mp4" type="video/mp4">
-          <source src="../video/video-mem/MASS.mp4" type="video/mp4">
-          <source src="../video/video-mem/No.Video.RedMonster.mp4" type="video/mp4">
-          <source src="../video/video-mem/No.Video.Yet.mp4" type="video/mp4">
-          Il tuo browser non supporta il tag video.
-        </video>
-      </div>
-      -->
-      <div class="body-fix" style="grid-template-columns: auto auto auto auto; justify-content: center;">
-        <div id="MASS">
-            <div class="center">
-                <div class="front-face">
-                   <div class="contents front">
-                      <p>
-                         SonoNessunk
-                      </p>
-                      <span>###</span>
-                   </div>
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="../index.html">MineBros</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
                 </div>
-                <div class="back-face">
-                   <div class="contents back">
-                      <h2>
-                         SonoNessunk
-                      </h2>
-                      <span>Find Me</span>
-                      <div class="icons">
-                         <a href="#"><i class="fab fa-instagram"></i></a>
-                         <a target= "_blank" href="https://youtube.com/@Sono.Nessunk"><i class="fab fa-youtube"></i></a>
-                      </div>
-                   </div>
+
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./workingprogress.html">About</a></li>
+                    <li><a href="./members.html" class="active">Members</a></li>
+                    <li><a href="./workingprogress.html">Services</a></li>
+                    <li><a href="./workingprogress.html">Contact</a></li>
+                    <li><a href="./testing.html">Testing - page</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                <div class="dark-light">
+                    <i class="bx"></i>
+                    <i class='bx bx-moon moon'></i>
+                    <i class='bx bx-sun sun'></i>
                 </div>
-             </div>
+    
+                <div class="searchBox">
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>
+                        <i class='bx bx-search search'></i>
+                    </div>
+          
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+        
+                <i class='bx bx-menu sidebarOpen'></i>
+            </div>
         </div>
-      
+    </nav>
 
-      <div id="JAG">
-        <div class="center">
-            <div class="front-face">
-               <div class="contents front">
-                  <p>
-                     JAGwolf
-                  </p>
-                  <span>###</span>
-               </div>
-            </div>
-            <div class="back-face">
-               <div class="contents back">
-                  <h2>
-                     JAGwolf
-                  </h2>
-                  <span>Find Me</span>
-                  <div class="icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a target= "_blank" href="https://youtube.com/@jagwolf2125"><i class="fab fa-youtube"></i></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+   <div class="body-fix">
 
-      <div id="RED">
-        <div class="center">
-            <div class="front-face">
-               <div class="contents front">
-                  <p>
-                     Red Monster
-                  </p>
-                  <span>###</span>
-               </div>
-            </div>
-            <div class="back-face">
-               <div class="contents back">
-                  <h2>
-                     Red Monster
-                  </h2>
-                  <span>Find Me</span>
-                  <div class="icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a target= "_blank" href="https://youtube.com/@redmonster6062"><i class="fab fa-youtube"></i></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+   </div>
 
-      <div id="GX">
-        <div class="center">
-            <div class="front-face">
-               <div class="contents front">
-                  <p>
-                     GX_328GAMER
-                  </p>
-                  <span>###</span>
-               </div>
-            </div>
-            <div class="back-face">
-               <div class="contents back">
-                  <h2>
-                     GX_328GAMER
-                  </h2>
-                  <span>Find Me</span>
-                  <div class="icons">
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a target= "_blank" href="https://youtube.com/@gx_328gamer6"><i class="fab fa-youtube"></i></a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
+    <div class="footer" id="about">
+        <section>
+            <article>
+                <h5>Avviso</h5>
+                <div class="article norm-txt-dk">
+                    <p>In questo momento non è ancora garantito l'esistenza di questo "gruppo". &nbsp; :&#40;</p>
+                    <p>Quindi non ho niente da mettere. Per adesso. &nbsp; :&#41;</p>
+                </div>
+            </article>
+        </section>
     </div>
-  </div>
-
-  <div class="footer" id="about">
-    <section>
-        <article>
-            <h5>Avviso</h5>
-            <div class="article norm-txt-dk">
-                <p>In questo momento non è ancora garantito l'esistenza di questo "gruppo". &nbsp; :&#40;</p>
-                <p>Quindi non ho niente da mettere. Per adesso. &nbsp; :&#41;</p>
-            </div>
-        </article>
-    </section>
-</div>
-
-<footer>
-    <p class="norm-txt">Copyright &copy; 2023 MineBros All rights semi-reserved</p>
-    <p>Made with &lt;3 by <a href="https://youtube.com/@Sono.Nessunk" target= "_blank">SonoNessunk</a></p>
-</footer>
-
-  <!-- <style>
-    .popup {
-      display: none;
-      padding: 20px;
-      z-index: 9999;
-
-      position: absolute;
-      top: 20%;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      width: 50%;
-    }
-
-    .popup video {
-      width: 200%;
-      height: auto;
-    }
-
-    /* Stile per il pulsante di chiusura */
-    .close-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background-color: #ccc;
-      border: none;
-      color: #000;
-      padding: 5px 10px;
-      font-size: 14px;
-      cursor: pointer;
-    }
-  </style> -->
-
-
-  <!-- <script type="text/javascript" src="../js/menu.js"></script> -->
-  <script type="text/javascript" src="../js/pop-up.js"></script>
-  <script type="text/javascript" src="../js/navbar.js"></script>
-
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-
-
+    
+    <footer>
+        <p class="norm-txt">Copyright &copy; 2023 MineBros All rights semi-reserved</p>
+        <p>Made with &lt;3 by <a href="https://youtube.com/@Sono.Nessunk" target= "_blank">SonoNessunk</a></p>
+    </footer>
+    
+    <script type="text/javascript" src="../js/navbar.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
+</html> -->
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sito non-ufficiale | MineBros</title>
+
+    <link rel="icon" href="img/img-favicon/favicon.ico" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="stylesheet" href="../css/typer.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/var.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
+</head>
+<body>
+    <nav>
+        <div class="nav-bar">
+            
+            <span class="logo navLogo"><a href="../index.html">MineBros</a></span>
+
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo"><a href="../index.html">MineBros</a></span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./workingprogress.html">About</a></li>
+                    <li><a href="./members.html" class="active">Members</a></li>
+                    <li><a href="./workingprogress.html">Services</a></li>
+                    <li><a href="./workingprogress.html">Contact</a></li>
+                    <li><a href="./testing.html">Testing - page</a></li>
+                </ul>
+            </div>
+
+            <div class="darkLight-searchBox">
+                
+                <div class="searchBox">
+                   <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>
+                    <i class='bx bx-search search'></i>
+                </div>
+
+                    <div class="search-field">
+                        <input type="text" placeholder="Search...">
+                        <i class='bx bx-search'></i>
+                    </div>
+                </div>
+
+                <i class='bx bx-menu sidebarOpen' ></i>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="body-fix">
+        
+    </div>
+
+    <div class="footer" id="about">
+        <section>
+            <article>
+                <h5>Avviso</h5>
+                <div class="article norm-txt-dk">
+                    <p>In questo momento non è ancora garantito l'esistenza di questo "gruppo". &nbsp; :&#40;</p>
+                    <p>Quindi non ho niente da metter. Per adesso. &nbsp; :&#41;</p>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <footer>
+        <p class="norm-txt">Copyright &copy; 2023 MineBros All rights semi-reserved</p>
+        <p>Made with &lt;3 by <a href="https://youtube.com/@Sono.Nessunk" target= "_blank">SonoNessunk</a></p>
+    </footer>
+
+    <script type="text/javascript" src="./js/navbar.js"></script>
+</body>
 </html>

@@ -75,23 +75,23 @@ nav .nav-bar .logo a{
     bottom: 0px;
     width: 90%;
     height: 3px;
-    background: #e8c973;
+    background: var(--hover-color);
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform .3s;
 }
 
 .nav-links a:hover::after {
-    transform: scaleX(1);
+    transform: scaleX(.8);
 }
 
 .nav-links a.active::after{
     transform: scaleX(.5);
-    background: #e1b53e;
+    background: var(--nav-line);
 }
 .nav-links a.active:hover::after{
-    transform: scaleX(.9);
-    background: #e8c973;
+    transform: scaleX(.8);
+    background: var(--hover-color);
 }
 
 .nav-bar .darkLight-searchBox{
