@@ -6,14 +6,19 @@
 
 }
 
+.content section article h5 a:hover {
+    color: #66666685!important;
+}
+
 .content section {
     max-width: 1024px;
 }
 
 .content section article {
-    padding: 5rem;
     padding-top: 1.8rem;
     padding-bottom: 2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
     margin-top: 2rem;
     margin-bottom: 1.8rem; 
     margin-left: 1.2rem;
@@ -70,5 +75,13 @@
         margin-right: 5rem;
     }
     
+    
+}
+
+@media (max-width: 900px) {
+    .content section article {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
     
 }
