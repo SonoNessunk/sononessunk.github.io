@@ -3,7 +3,6 @@
     gap: 1rem; 
     justify-items: center; 
     place-content: center; 
-
 }
 
 .content section article h5 a:hover {
@@ -45,7 +44,6 @@
 .content section article a:hover{
     color: #444444;
     line-height: 2.5rem;
-
 }
 
 .content section article h5 {
@@ -59,8 +57,6 @@
     text-transform: uppercase;
 }
 
-
-
 .article p {
     color: var(--text-color-dk);
 }
@@ -69,13 +65,10 @@
     .content section {
         max-width: 1280px;
     }
-
     .content section article {
         margin-left: 5rem;
         margin-right: 5rem;
-    }
-    
-    
+    }  
 }
 
 @media (max-width: 900px) {
@@ -83,9 +76,8 @@
         padding-left: 1.5rem;
         padding-right: 1.5rem;
     }
-    
 }
 
 .body-fix h5 {
-    text-shadow: #131313a4 1.7px 1.7px 1px;
+    text-shadow: #131313a4 1.7px 1.7px 2px;
 }
