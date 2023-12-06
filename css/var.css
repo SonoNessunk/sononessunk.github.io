@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --main-color: #1a1a1a;
-    --hover-color: #8a8a8a;
+    --main-color: #d33030;
+    --hover-color: #e25d5d;
     --text-color: #CCC;
+    /*#242526 */
     --nav-color: rgba(0, 0, 0, 0.174);
-    --body-color: #393939;
-    --side-nav: #444444;
+    --body-color: #2e2e2e;
+    --side-nav: #242526;
     --search-text: #CCC;
     --search-bar: #242526;
     --text-color-lg: #F2F2F2;
-    --nav-line: #656565;
+    --nav-line: #e13e3e;
     --content-color: #525252;
-    --text-color-dk: #303030;
 }
 
 *{
@@ -21,13 +21,14 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
+    color: var(--text-color);
     list-style: none;
     transition: all 0.4s ease;
 }
 
 body {
-    /* background-color: var(--body-color); */
-    background-color: black;
+    background-image: linear-gradient(346deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 22%,rgba(140, 140, 140,0.04) 22%, rgba(140, 140, 140,0.04) 69%,rgba(225, 225, 225,0.04) 69%, rgba(225, 225, 225,0.04) 100%),linear-gradient(31deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 42%,rgba(140, 140, 140,0.04) 42%, rgba(140, 140, 140,0.04) 85%,rgba(225, 225, 225,0.04) 85%, rgba(225, 225, 225,0.04) 100%),linear-gradient(55deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 13%,rgba(140, 140, 140,0.04) 13%, rgba(140, 140, 140,0.04) 72%,rgba(225, 225, 225,0.04) 72%, rgba(225, 225, 225,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0));
+    height: 100vh; 
     color: var(--text-color);
     background-color: black;
 }
@@ -46,32 +47,9 @@ body {
 
 .body-fix {
     display: grid;
-    position: relative;
+    position: relative; 
     gap: 1rem; 
     justify-items: center; 
     place-content: center; 
     height: 100vh;
-    background: var(--body-color);
 }
-
-/* ===== Scrollbar CSS ===== */
-  /* Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: #707070 #303030;
-  }
-
-  /* Chrome, Edge, and Safari */
-  *::-webkit-scrollbar {
-    width: 15px;
-  }
-
-  *::-webkit-scrollbar-track {
-    background: #303030;
-  }
-
-  *::-webkit-scrollbar-thumb {
-    background-color: #707070;
-    border-radius: 2px;
-    border: 3px solid #474747;
-  }
