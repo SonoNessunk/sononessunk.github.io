@@ -25,7 +25,7 @@
     margin-right: 1.2rem; 
     border-radius: 0.5rem; 
     border-width: 1px; 
-    background-color: #ffffff;
+    background-color: #0000003f;
     box-shadow: 0px 20px 25px -5px rgba(0,0,0,0.1), 0px 10px 10px -5px rgba(0,0,0,0.17), 0px -10px 10px -5px rgba(0,0,0,0.17), 0px -20px 25px -5px rgba(0,0,0,0.1), -20px 0px 25px -5px rgba(0,0,0,0.1), -10px 0px 10px -5px rgba(0,0,0,0.17), 20px 0px 25px -5px rgba(0,0,0,0.1), 10px 0px 10px -5px rgba(0,0,0,0.17);
     align-content: center;
     align-items: center;
@@ -57,12 +57,13 @@
     text-align: center; 
     color: var(--content-color); 
     text-transform: uppercase;
+    text-shadow: rgb(0, 0, 0) 1px 1px;
 }
 
 
 
 .article p {
-    color: var(--text-color-dk);
+    color: var(--text-color);
 }
 
 @media (min-width: 1280px) {

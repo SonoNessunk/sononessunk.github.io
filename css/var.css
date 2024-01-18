@@ -4,7 +4,6 @@
     --main-color: #d33030;
     --hover-color: #e25d5d;
     --text-color: #CCC;
-    /*#242526 */
     --nav-color: rgba(0, 0, 0, 0.174);
     --body-color: #2e2e2e;
     --side-nav: #242526;
@@ -12,7 +11,7 @@
     --search-bar: #242526;
     --text-color-lg: #F2F2F2;
     --nav-line: #e13e3e;
-    --content-color: #525252;
+    --content-color: #ffffff;
 }
 *{
     margin: 0;
