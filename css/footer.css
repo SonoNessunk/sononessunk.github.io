@@ -47,7 +47,7 @@ footer {
     gap: 0.5rem; 
     justify-items: center; 
     place-content: center;
-    background-color: #000000;
+    background-color: var(--footer-color);
     line-height: 24px;
     text-align: center;
 }
