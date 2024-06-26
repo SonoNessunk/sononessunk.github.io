@@ -36,6 +36,7 @@
 
 .content section article p {
     text-align: center;
+    max-width: 400px;
 }
 
 .content section article a{
@@ -78,6 +79,7 @@
         margin-right: 5rem;
     }
     
+
     
 }
 
