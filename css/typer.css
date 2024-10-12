@@ -8,8 +8,9 @@
     width: 100%;
     margin: auto;
 }
-span{
+.container span{
     color: var(--main-color);
+    text-shadow: #3f1616 0.2rem 0.2rem;
 }
 
 @media (max-width: 1000px){

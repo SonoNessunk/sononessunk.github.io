@@ -16,7 +16,7 @@ nav .nav-bar{
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
-    align-items: center;
+    align-items:first center    ;
     justify-content: space-between;
 }
 
@@ -33,6 +33,10 @@ nav .nav-bar .logo a{
     font-weight: 500;
     color: var(--text-color);
     text-decoration: none;
+}
+
+.logo {
+    padding-right: 100px;
 }
 
 .menu .logo-toggle{
