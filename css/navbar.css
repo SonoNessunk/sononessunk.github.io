@@ -8,7 +8,7 @@ nav {
     z-index: 100;
 }
 
-nav .nav-bar{
+nav .nav-bar {
     position: relative;
     height: 100%;
     max-width: 1000px;
@@ -16,11 +16,11 @@ nav .nav-bar{
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
-    align-items:first center    ;
+    align-items: center;
     justify-content: space-between;
 }
 
-nav .nav-bar .sidebarOpen{
+nav .nav-bar .sidebarOpen {
     color: var(--text-color);
     font-size: 25px;
     padding: 5px;
@@ -28,32 +28,32 @@ nav .nav-bar .sidebarOpen{
     display: none;
 }
 
-nav .nav-bar .logo a{
+nav .nav-bar .logo a {
     font-size: 25px;
     font-weight: 500;
     color: var(--text-color);
     text-decoration: none;
 }
 
-.logo {
+/* .logo {
     padding-right: 100px;
-}
+} */
 
-.menu .logo-toggle{
+.menu .logo-toggle {
     display: none;
 }
 
-.nav-bar .nav-links{
+.nav-bar .nav-links {
     display: flex;
     align-items: center;
 }
 
-.nav-bar .nav-links li{
+.nav-bar .nav-links li {
     margin: 0 5px;
     list-style: none;
 }
 
-.nav-links li a{
+.nav-links li a {
     position: relative;
     font-size: 17px;
     font-weight: 400;
@@ -81,21 +81,22 @@ nav .nav-bar .logo a{
     transform: scaleX(.8);
 }
 
-.nav-links a.active::after{
+.nav-links a.active::after {
     transform: scaleX(.5);
     background: var(--nav-line);
 }
-.nav-links a.active:hover::after{
+
+.nav-links a.active:hover::after {
     transform: scaleX(.8);
     background: var(--hover-color);
 }
 
 @media (max-width: 790px) {
-    nav .nav-bar .sidebarOpen{
+    nav .nav-bar .sidebarOpen {
         display: block;
     }
 
-    .menu{
+    .menu {
         position: fixed;
         height: 100%;
         width: 320px;
@@ -107,16 +108,16 @@ nav .nav-bar .logo a{
         transition: all 0.4s ease;
     }
 
-    nav.active .menu{
+    nav.active .menu {
         right: -0%;
     }
 
-    nav.active .nav-bar .navLogo a{
+    nav.active .nav-bar .navLogo a {
         opacity: 0;
         transition: all 0.3s ease;
     }
 
-    .menu .logo-toggle{
+    .menu .logo-toggle {
         display: block;
         width: 100%;
         display: flex;
@@ -124,19 +125,56 @@ nav .nav-bar .logo a{
         justify-content: space-between;
     }
 
-    .logo-toggle .siderbarClose{
+    .logo-toggle .siderbarClose {
         color: var(--text-color);
         font-size: 24px;
         cursor: pointer;
     }
 
-    .nav-bar .nav-links{
+    .nav-bar .nav-links {
         flex-direction: column;
         padding-top: 30px;
     }
 
-    .nav-links li a{
+    .nav-links li a {
         display: block;
         margin-top: 20px;
     }
+}
+
+.nav-bar .darkLight-searchBox {
+    display: flex;
+    align-items: center;
+}
+
+.dark-light {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+
+.dark-light i {
+    position: absolute;
+    color: var(--text-color);
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.dark-light i.sun {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dark-light.active i.sun {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.dark-light.active i.moon {
+    opacity: 0;
+    pointer-events: none;
 }

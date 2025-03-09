@@ -1,20 +1,29 @@
-.container{
-    max-width: 1024px; 
-    text-align: center; 
+.container {
+    max-width: 1024px;
+    text-align: center;
 }
-.container h1{
+
+body.light .container h1 {
+    color: var(--text-color-lg);
+    text-shadow: #2e2e2e 0.3rem 0.2rem;
+}
+
+.container h1 {
+    color: #CCC;
+    text-shadow: #686868 0.3rem 0.2rem;
     font-size: 4.1em;
     font-weight: 600;
     width: 100%;
     margin: auto;
 }
-.container span{
+
+.container span {
     color: var(--main-color);
-    text-shadow: #3f1616 0.2rem 0.2rem;
+    text-shadow: #3f1616 0.3rem 0.2rem;
 }
 
-@media (max-width: 1000px){
-    .container h1{
+@media (max-width: 1000px) {
+    .container h1 {
         font-size: 2.2em;
         font-weight: 600;
     }

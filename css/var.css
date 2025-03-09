@@ -4,19 +4,17 @@
     --main-color: #d33030;
     --hover-color: #e25d5d;
     --text-color: #CCC;
-    /* --nav-color: rgba(0, 0, 0, 0.174); */
     --nav-color: #000000bf;
     --body-color: #2e2e2e;
     --side-nav: #242526;
-    --search-text: #CCC;
-    --search-bar: #242526;
-    --text-color-lg: #F2F2F2;
+    --text-color-lg: #3f3f3f;
     --nav-line: #e13e3e;
     --content-title: #ffffff;
     --content-background: #000000bf;
     --footer-color: #000000f2;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -29,13 +27,27 @@
 
 body {
     /* background-image: linear-gradient(346deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 22%,rgba(140, 140, 140,0.04) 22%, rgba(140, 140, 140,0.04) 69%,rgba(225, 225, 225,0.04) 69%, rgba(225, 225, 225,0.04) 100%),linear-gradient(31deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 42%,rgba(140, 140, 140,0.04) 42%, rgba(140, 140, 140,0.04) 85%,rgba(225, 225, 225,0.04) 85%, rgba(225, 225, 225,0.04) 100%),linear-gradient(55deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 13%,rgba(140, 140, 140,0.04) 13%, rgba(140, 140, 140,0.04) 72%,rgba(225, 225, 225,0.04) 72%, rgba(225, 225, 225,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0)); */
-    background-image: url(../img/background/mount-2.svg);
+    background-image: url(/img/background/mount-2.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     min-height: 100vh;
     color: var(--text-color);
-    background-color: #000000;
+    background-color: var(--body-color);
+}
+
+body.light {
+    --body-color: #969696;
+    --nav-color: #353535bf;
+    --side-nav: #4e5153;
+    --text-color: #CCC;
+    background-image: url(/img/background/Mediamodifier-Design.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: var(--text-color);
+    background-color: var(--body-color);
 }
 
 
@@ -47,7 +59,7 @@ body {
 .body-fix {
     display: grid;
     position: relative;
-    justify-items: center; 
-    place-content: center; 
+    justify-items: center;
+    place-content: center;
     min-height: 100vh;
 }
