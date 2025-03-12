@@ -161,20 +161,25 @@ nav .nav-bar .logo a {
     color: var(--text-color);
     font-size: 22px;
     cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-.dark-light i.sun {
-    opacity: 0;
-    pointer-events: none;
-}
 
-.dark-light.active i.sun {
+body.light .dark-light i.sun {
     opacity: 1;
     pointer-events: auto;
 }
 
-.dark-light.active i.moon {
+body.light .dark-light i.moon {
     opacity: 0;
+    pointer-events: auto;
+}
+
+body .dark-light i.sun {
+    opacity: 0;
+    pointer-events: none;
+}
+
+body .dark-light i.moon {
+    opacity: 1;
     pointer-events: none;
 }
