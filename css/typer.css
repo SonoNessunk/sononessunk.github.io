@@ -5,26 +5,26 @@
 
 body.light .container h1 {
     color: var(--text-color-lg);
-    text-shadow: #2e2e2e 0.3rem 0.2rem;
+    text-shadow: #2e2e2e 5px 3px;
 }
 
 .container h1 {
     color: #CCC;
-    text-shadow: #686868 0.3rem 0.2rem;
-    font-size: 4.1em;
-    font-weight: 600;
+    text-shadow: #686868 5px 3px;
+    font-size: 4em;
     width: 100%;
     margin: auto;
+    font-weight: 600;
 }
 
 .container span {
     color: var(--main-color);
-    text-shadow: #3f1616 0.3rem 0.2rem;
+    text-shadow: #3f1616 5px 3px;
+    font-weight: 600;
 }
 
 @media (max-width: 1000px) {
     .container h1 {
-        font-size: 2.2em;
-        font-weight: 600;
+        font-size: 2em;
     }
 }

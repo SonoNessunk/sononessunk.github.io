@@ -1,28 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 :root {
     --main-color: #d33030;
     --hover-color: #e25d5d;
-    --text-color: #CCC;
-    --nav-color: #000000bf;
+    --text-color: #cccccc;
+    --nav-color: #020202;
     --body-color: #2e2e2e;
     --side-nav: #242526;
-    --text-color-lg: #3f3f3f;
+    --text-color-lg: #4f4f4f;
     --nav-line: #e13e3e;
     --content-title: #ffffff;
     --content-background: #000000bf;
-    --footer-color: #000000f2;
+    --footer-color: #000000;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Lexend', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 400;
     text-decoration: none;
     color: var(--text-color);
     list-style: none;
-    transition: all 0.4s ease;
+    transition: all 400ms cubic-bezier(.08, .82, .17, 1);
 }
 
 body {
@@ -38,7 +41,7 @@ body {
 
 body.light {
     --body-color: #969696;
-    --nav-color: #353535bf;
+    --nav-color: #5b5b5b;
     --side-nav: #4e5153;
     --text-color: #CCC;
     background-image: url(/img/background/mount-light.png);
@@ -52,7 +55,7 @@ body.light {
 
 
 .norm-txt {
-    font-size: .95rem;
+    font-size: 1rem;
     line-height: 1.5rem;
 }
 

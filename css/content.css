@@ -7,8 +7,13 @@
     padding-bottom: 12rem;
 }
 
+.content section article h5 a {
+    font-weight: 700;
+}
+
 .content section article h5 a:hover {
     color: #66666685!important;
+    text-shadow: none;
 }
 
 .content section {
@@ -59,7 +64,7 @@
     text-align: center; 
     color: var(--content-title); 
     text-transform: uppercase;
-    text-shadow: rgb(0, 0, 0) 1px 1px;
+    text-shadow: #141414 2px 2px;
 }
 
 .content section article audio {
