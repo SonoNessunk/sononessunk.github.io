@@ -51,7 +51,7 @@
     color: var(--text-color);
 }
 
-.nav-links a::after, .logo::after {
+.nav-links a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -68,16 +68,16 @@
     top: 35px;
 }
 
-.nav-links a:hover::after, .logo:hover::after {
+.nav-links a:hover::after {
     transform: scaleX(0.8);
 }
 
-.nav-links a.active::after, .logo.active::after {
+.nav-links a.active::after {
     transform: scaleX(0.5);
     background: var(--nav-line);
 }
 
-.nav-links a.active:hover::after, .logo.active:hover::after {
+.nav-links a.active:hover::after{
     transform: scaleX(0.8);
     background: var(--hover-color);
 }
