@@ -1,181 +1,121 @@
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 70px;
-  width: 100%;
-  background-color: var(--nav-color);
-  z-index: 100;
-}
-
-nav .nav-bar {
-  position: relative;
-  height: 100%;
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 30px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav .nav-bar .sidebarOpen {
-  color: var(--text-color);
-  font-size: 25px;
-  padding: 5px;
-  cursor: pointer;
-  display: none;
-}
-
-nav .nav-bar .logo a {
-  font-size: 25px;
-  font-weight: 500;
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-.menu .logo-toggle {
-  display: none;
-}
-
-.nav-bar .nav-links {
-  display: flex;
-  align-items: center;
-}
-
-.nav-bar .nav-links li {
-  margin: 0 5px;
-  list-style: none;
-}
-
-.nav-links li a {
-  position: relative;
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: var(--text-color);
-  text-decoration: none;
-  padding: 10px;
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  bottom: 0px;
-  width: 90%;
-  height: 3px;
-  background: var(--hover-color);
-  border-radius: 5px;
-  transform: scaleX(0);
-  transition: transform 0.3s;
-}
-
-.nav-links a:hover::after {
-  transform: scaleX(0.8);
-}
-
-.nav-links a.active::after {
-  transform: scaleX(0.5);
-  background: var(--nav-line);
-}
-
-.nav-links a.active:hover::after {
-  transform: scaleX(0.8);
-  background: var(--hover-color);
-}
-
-@media (max-width: 790px) {
-  nav .nav-bar .sidebarOpen {
-    display: block;
-  }
-
-  .menu {
+.navbar {
     position: fixed;
-    height: 100%;
-    width: 320px;
-    right: -100%;
+    background-color: var(--nav-color);
     top: 0;
-    padding: 20px;
-    background-color: var(--side-nav);
+    left: 0;
+    right: 0;
+    height: 70px;
     z-index: 100;
-    transition: all 0.4s ease;
-  }
 
-  nav.active .menu {
-    right: -0%;
-  }
-
-  nav.active .nav-bar .navLogo a {
-    opacity: 0;
-    transition: all 0.3s ease;
-  }
-
-  .menu .logo-toggle {
-    display: block;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
 
-  .logo-toggle .sidebarClose {
+.nav-left-side {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.logo {
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.nav-center-side {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-right-side {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    position: relative;
+    font-size: 1.1rem;
     color: var(--text-color);
-    font-size: 24px;
+}
+
+.nav-links a::after, .logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 28px;
+    height: 3px;
+    background: var(--hover-color);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.logo::after {
+    top: 35px;
+}
+
+.nav-links a:hover::after, .logo:hover::after {
+    transform: scaleX(0.8);
+}
+
+.nav-links a.active::after, .logo.active::after {
+    transform: scaleX(0.5);
+    background: var(--nav-line);
+}
+
+.nav-links a.active:hover::after, .logo.active:hover::after {
+    transform: scaleX(0.8);
+    background: var(--hover-color);
+}
+
+.theme-toggle {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-  }
-
-  .nav-bar .nav-links {
-    flex-direction: column;
-    padding-top: 30px;
-  }
-
-  .nav-links li a {
-    display: block;
-    margin-top: 20px;
-  }
 }
 
-.nav-bar .darkLight-searchBox {
-  display: flex;
-  align-items: center;
+.theme-toggle i {
+    position: absolute;
+    font-size: 1.3rem;
+    cursor: pointer;
 }
 
-.dark-light {
-  height: 40px;
-  width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 5px;
+.theme-toggle.active i.sun {
+    opacity: 0;
+    pointer-events: none;
 }
 
-.dark-light i {
-  position: absolute;
-  color: var(--text-color);
-  font-size: 22px;
-  cursor: pointer;
-  transition: none !important;
+.theme-toggle.active i.moon {
+    opacity: 1;
+    pointer-events: auto;
 }
 
-.dark-light.active i.sun {
-  opacity: 1;
-  pointer-events: auto;
+.theme-toggle i.sun {
+    opacity: 1;
+    pointer-events: auto;
 }
 
-.dark-light.active i.moon {
-  opacity: 0;
-  pointer-events: auto;
+.theme-toggle i.moon {
+    opacity: 0;
+    pointer-events: none;
 }
 
-.dark-light i.sun {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.dark-light i.moon {
-  opacity: 1;
-  pointer-events: none;
+.menu-toggle {
+    display: none;
 }

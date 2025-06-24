@@ -1,34 +1,28 @@
 .footer {
-  display: grid;
-  gap: 1rem;
-  justify-items: center;
-  place-content: center;
-  padding-top: 33rem;
+    display: grid;
+    gap: 1rem;
+    justify-items: center;
+    place-content: center;
+    padding-top: 33rem;
 }
 
 footer {
-  display: grid;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-  gap: 0.5rem;
-  justify-items: center;
-  place-content: center;
-  background-color: var(--footer-color);
-  line-height: 24px;
-  text-align: center;
+    display: grid;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    gap: 0.5rem;
+    justify-items: center;
+    place-content: center;
+    background-color: var(--footer-color);
+    line-height: 24px;
+    text-align: center;
 }
 
 footer p a {
-  font-weight: 700;
-  color: var(--text-color-lg);
+    font-weight: 700;
+    color: var(--text-color-lg);
 }
 
 footer p a:hover {
-  color: var(--hover-color);
-}
-
-@media (max-width: 1000px) {
-  footer p a {
     color: var(--hover-color);
-  }
 }

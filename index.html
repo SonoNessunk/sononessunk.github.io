@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>SonoNessunk</title>
 
-    <link rel="icon" href="/img/img-favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/img/favicon/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -19,36 +20,30 @@
 </head>
 
 <body>
-    <nav>
-        <div class="nav-bar">
-            <span class="logo navLogo"><a href="/index">SonoNessunk</a></span>
-            <div class="menu">
-                <div class="logo-toggle">
-                    <span class="logo"><a href="/index">SonoNessunk</a></span>
-                    <i class='bx bx-x sidebarClose'></i>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="/index" class="active">Home</a></li>
-                    <li><a href="/pages/creations">Creations</a></li>
-                    <li><a href="/pages/contact">Contact</a></li>
-                    <li><a href="/game" target="_blank">Game</a></li>
-                </ul>
-            </div>
-            <div class="darkLight-searchBox">
-                <div class="dark-light">
-                    <i class='bx bx-moon moon'></i>
-                    <i class='bx bx-sun sun'></i>
-                </div>
-                <i class='bx bx-menu sidebarOpen'></i>
+    <nav class="navbar">
+        <div class="nav-left-side">
+            <a class="logo active" href="/index.html">SonoNessunk</a>
+        </div>
+        <div class="nav-center-side">
+            <ul class="nav-links">
+                <li><a href="/pages/workingprogress.html">About</a></li>
+                <li><a href="/pages/contact.html">Contact</a></li>
+                <li><a href="/pages/projects.html">Projects</a></li>
+            </ul>
+        </div>
+        <div class="nav-right-side">
+            <div class="theme-toggle">
+                <i class='bx bx-moon moon'></i>
+                <i class='bx bx-sun sun'></i>
             </div>
         </div>
     </nav>
 
-    <div class="body-fix">
-        <div class="container">
+    <main>
+        <div class="typer-container">
             <h1>I'm <span class="typer"></span></h1>
         </div>
-    </div>
+    </main>
 
     <footer>
         <p class="norm-txt">Copyright &copy; 2023 SonoNessunk All rights reserved</p>

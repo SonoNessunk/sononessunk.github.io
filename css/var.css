@@ -18,18 +18,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lexend', sans-serif;
+    font-family: 'Lexend', Arial, sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-weight: 400;
     text-decoration: none;
     color: var(--text-color);
-    list-style: none;
     transition: all 400ms cubic-bezier(.08, .82, .17, 1);
 }
 
 body {
-    /* background-image: linear-gradient(346deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 22%,rgba(140, 140, 140,0.04) 22%, rgba(140, 140, 140,0.04) 69%,rgba(225, 225, 225,0.04) 69%, rgba(225, 225, 225,0.04) 100%),linear-gradient(31deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 42%,rgba(140, 140, 140,0.04) 42%, rgba(140, 140, 140,0.04) 85%,rgba(225, 225, 225,0.04) 85%, rgba(225, 225, 225,0.04) 100%),linear-gradient(55deg, rgba(55, 55, 55,0.04) 0%, rgba(55, 55, 55,0.04) 13%,rgba(140, 140, 140,0.04) 13%, rgba(140, 140, 140,0.04) 72%,rgba(225, 225, 225,0.04) 72%, rgba(225, 225, 225,0.04) 100%),linear-gradient(90deg, rgb(0,0,0),rgb(0,0,0)); */
     background-image: url(/img/background/mount-dark.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,24 +42,11 @@ body.light {
     --side-nav: #4e5153;
     --text-color: #CCC;
     background-image: url(/img/background/mount-light.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 100vh;
-    color: var(--text-color);
-    background-color: var(--body-color);
 }
 
-
-.norm-txt {
-    font-size: 1rem;
-    line-height: 1.5rem;
-}
-
-.body-fix {
-    display: grid;
-    position: relative;
-    justify-items: center;
-    place-content: center;
+main {
+    padding-top: 70px;
+    display: flex;
     min-height: 100vh;
+    justify-content: center;
 }
