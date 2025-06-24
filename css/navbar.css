@@ -64,10 +64,6 @@
     transition: transform 0.3s;
 }
 
-.logo::after {
-    top: 35px;
-}
-
 .nav-links a:hover::after {
     transform: scaleX(0.8);
 }
